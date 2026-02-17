@@ -270,6 +270,23 @@ h1 {
   text-decoration: none;
 }
 
+.linkedin-link {
+  display: inline-flex;
+  vertical-align: middle;
+  margin-left: 8px;
+  color: var(--primary);
+  opacity: 0.85;
+}
+
+.linkedin-link:hover {
+  opacity: 1;
+}
+
+.linkedin-icon {
+  width: 18px;
+  height: 18px;
+}
+
 @keyframes fade-up {
   from {
     opacity: 0;

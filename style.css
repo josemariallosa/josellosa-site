@@ -159,6 +159,13 @@ h1 {
   color: rgba(247, 245, 241, 0.9);
 }
 
+.hero-note {
+  margin: -8px auto 22px;
+  max-width: 720px;
+  font-size: 0.95rem;
+  color: rgba(247, 245, 241, 0.72);
+}
+
 .cta {
   display: inline-block;
   text-decoration: none;
@@ -222,6 +229,11 @@ h1 {
   position: relative;
   padding-left: 22px;
   max-width: 900px;
+}
+
+.panel-copy {
+  max-width: 920px;
+  color: var(--muted);
 }
 
 .mandates-list {
@@ -308,6 +320,12 @@ h1 {
 
   .feature-list {
     gap: 14px;
+  }
+
+  .hero-note {
+    margin-top: -4px;
+    margin-bottom: 18px;
+    font-size: 0.92rem;
   }
 
   .mandates-list li {

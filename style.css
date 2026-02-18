@@ -228,17 +228,13 @@ h1 {
 
 .feature-list li {
   position: relative;
-  padding-left: 0;
+  padding-left: 22px;
   max-width: 900px;
-  margin: 0 auto;
-  text-align: center;
 }
 
 .panel-copy {
   max-width: 920px;
   color: var(--muted);
-  margin: 0 auto;
-  text-align: center;
 }
 
 .mandates-list {
@@ -253,19 +249,16 @@ h1 {
   border-bottom: 1px solid var(--border);
   font-size: 1.02rem;
   max-width: 960px;
-  margin: 0 auto;
-  text-align: center;
 }
 
 .feature-list li::before {
   content: "";
-  position: static;
-  display: inline-block;
-  vertical-align: middle;
+  position: absolute;
+  left: 0;
+  top: 0.67em;
   width: 8px;
   height: 8px;
   background: var(--secondary);
-  margin-right: 12px;
 }
 
 .contact-section p {

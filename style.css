@@ -50,6 +50,13 @@ main .shell {
   width: min(720px, 92vw);
 }
 
+.content-block {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
 .site-nav {
   position: fixed;
   top: 0;
@@ -222,22 +229,10 @@ h1 {
   color: var(--muted);
 }
 
-.feature-list {
+.bullet-list {
   list-style: none;
-  margin: 0;
-  padding: 0 0 0 8px;
-  display: grid;
-  gap: 18px;
-  max-width: 720px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.feature-list li {
-  position: relative;
-  padding-left: 22px;
-  max-width: 720px;
-  text-align: center;
+  padding: 0;
+  margin: 2.5rem auto 0;
 }
 
 .panel-copy {
@@ -247,32 +242,22 @@ h1 {
   text-align: center;
 }
 
-.mandates-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  border-top: 1px solid var(--border);
-  max-width: 720px;
-  margin-left: auto;
-  margin-right: auto;
+.bullet-list li {
+  position: relative;
+  max-width: 680px;
+  margin: 0.9rem auto;
+  padding-left: 1.4rem;
+  text-align: left;
+  line-height: 1.55;
 }
 
-.mandates-list li {
-  padding: 18px 0;
-  border-bottom: 1px solid var(--border);
-  font-size: 1.02rem;
-  max-width: 720px;
-  text-align: center;
-}
-
-.feature-list li::before {
-  content: "";
+.bullet-list li::before {
+  content: "\25A0";
   position: absolute;
   left: 0;
-  top: 0.67em;
-  width: 8px;
-  height: 8px;
-  background: var(--secondary);
+  top: 0.4rem;
+  font-size: 0.65rem;
+  color: var(--secondary);
 }
 
 .contact-section p {
@@ -355,18 +340,17 @@ h1 {
     gap: 30px;
   }
 
-  .feature-list {
-    gap: 14px;
-  }
-
   .hero-note {
     margin-top: -4px;
     margin-bottom: 18px;
     font-size: 0.92rem;
   }
 
-  .mandates-list li {
-    padding: 14px 0;
-    font-size: 0.98rem;
+  .content-block {
+    padding: 0 1.2rem;
+  }
+
+  .bullet-list li {
+    padding-left: 1.2rem;
   }
 }

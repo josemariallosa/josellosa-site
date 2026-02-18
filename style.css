@@ -46,6 +46,10 @@ a {
   margin: 0 auto;
 }
 
+main .shell {
+  width: min(720px, 92vw);
+}
+
 .site-nav {
   position: fixed;
   top: 0;
@@ -221,20 +225,26 @@ h1 {
 .feature-list {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 8px;
   display: grid;
   gap: 18px;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .feature-list li {
   position: relative;
   padding-left: 22px;
-  max-width: 900px;
+  max-width: 720px;
+  text-align: center;
 }
 
 .panel-copy {
-  max-width: 920px;
+  max-width: 720px;
   color: var(--muted);
+  margin: 0 auto;
+  text-align: center;
 }
 
 .mandates-list {
@@ -242,13 +252,17 @@ h1 {
   margin: 0;
   padding: 0;
   border-top: 1px solid var(--border);
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mandates-list li {
   padding: 18px 0;
   border-bottom: 1px solid var(--border);
   font-size: 1.02rem;
-  max-width: 960px;
+  max-width: 720px;
+  text-align: center;
 }
 
 .feature-list li::before {
@@ -263,6 +277,11 @@ h1 {
 
 .contact-section p {
   color: var(--muted);
+  text-align: left;
+}
+
+.contact-section h2 {
+  text-align: left;
 }
 
 .contact-section a {

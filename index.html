@@ -48,7 +48,7 @@
         M&A, and execution for hospitality and living platforms across Europe.
       </p>
       <p class="hero-note">Based in Europe, with direct exposure to U.S. hospitality markets.</p>
-      <a class="cta" href="mailto:jose@josellosa.com">Get in touch</a>
+      <button type="button" class="cta js-contact-advisory">Contact advisory</button>
     </div>
   </header>
 
@@ -131,7 +131,7 @@
     <footer id="contact" class="section contact-section">
       <div class="shell">
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:jose@josellosa.com">jose@josellosa.com</a></p>
+      <p><button type="button" class="contact-button js-contact-advisory">Contact advisory</button></p>
       <p>
         LinkedIn:
         <a class="linkedin-link" href="https://www.linkedin.com/in/josemariallosa/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
@@ -143,5 +143,22 @@
       </div>
     </footer>
   </main>
+  <script>
+    (function () {
+      var local = ["ad", "vis", "ory"].join("");
+      var domain = ["jose", "llosa", ".com"].join("");
+      var mailto = "mail" + "to:";
+      var at = String.fromCharCode(64);
+
+      function openContact() {
+        window.location.href = mailto + local + at + domain;
+      }
+
+      var buttons = document.querySelectorAll(".js-contact-advisory");
+      buttons.forEach(function (button) {
+        button.addEventListener("click", openContact);
+      });
+    })();
+  </script>
 </body>
 </html>
